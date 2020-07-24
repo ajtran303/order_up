@@ -24,7 +24,7 @@ RSpec.describe Chef, type: :model do
     end
 
     it "#ingredients" do
-      expect(@chef_tofu.ingredients).to eq(["Lemonade", "Sugar", "Water"])
+      expect(@chef_tofu.ingredients).to eq(["Lemon Juice", "Sugar", "Water"])
     end
   end
 end
