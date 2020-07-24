@@ -3,7 +3,8 @@
     <header>
       <h1>Ingredients used by <%= @chef.name %></h1>
     </header>
-
-    <% binding.pry %>
+    <% @chef.ingredients.each do |ingredient| %>
+    <li><%= ingredient %></li> 
+    <% end %>
   </ul>
 </main>
