@@ -31,6 +31,13 @@ RSpec.describe "Dishes Show Page Spec" do
       it "There is the chef's name" do
         expect(page).to have_content("#{@lemonade.name}, by Chef #{@chef_tofu.name}")
       end
+
+      it "There is the total calorie count for that dish" do
+        within(".#{@lemonade.name.downcase}-ingredients") do
+          expect(page).to have_content("Total Calories: #{@lemonade.total_calories}")
+        end
+      end
+
     end
   end
 end
