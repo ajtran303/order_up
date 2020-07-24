@@ -22,7 +22,7 @@ RSpec.describe Dish, type: :model do
       @sugar_water.ingredients << [@sugar, @water]
     end
 
-    it ".total_calories" do
+    it "#total_calories" do
       expect(@sugar_water.total_calories).to eq(2100)
     end
   end
