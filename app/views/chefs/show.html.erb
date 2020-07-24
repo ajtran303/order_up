@@ -1,0 +1,6 @@
+<header>
+  <%= tag.h1 "Chef Profile: #{@chef.name}" %>
+</header>
+<main>
+  <%= link_to "Learn more about their ingredients", "/chefs/#{@chef.id}/ingredients" %>
+</main>
